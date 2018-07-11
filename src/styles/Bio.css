@@ -1,0 +1,180 @@
+#bio-container{
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#parallax-container{
+    /* border:2px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding-top:100vh;
+    overflow-y: scroll;
+}
+
+#bio-parallax{
+    /* border:2px solid yellow; */
+    overflow-y: scroll;
+    height:100%;
+    top:0;
+    width:100%; 
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+}
+
+#picture-gallery{
+    /* border:2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:100%;
+    justify-content:center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bio-img{
+    /* border:1px solid lightgray; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 33.33%;
+    max-width:100%;
+    height:50%;
+    max-height:50%;
+    margin:0;
+}
+
+.bio-snippet{
+    border-top:1px solid whitesmoke;
+    border-left:1px solid whitesmoke;
+    border-right:1px solid whitesmoke;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:3%;
+    color:transparent;
+    z-index: 20000;
+    visibility: hidden;
+    transition: height 0.5s;
+}
+
+.reveal{
+    height:7%;
+    transition: height 0.5s;
+    color:black;
+    visibility: visible;
+}
+
+
+
+#bio-img-one{
+    width:300px;
+    background-image: url("../images/grammyPaul.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bio-img-two{
+    width:300px;
+    background-image: url("../images/buddyGuy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bio-img-three{
+    width:300px;
+    background-image: url("../images/warren.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bio-img-four{
+    width:300px;
+    background-image: url("../images/wisconsin.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bio-img-five{
+    width:300px;
+    background-image: url("../images/winter.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bio-img-six{
+    width:300px;
+    background-image: url("../images/slash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bio-text{
+    border-top:2px solid whitesmoke;
+    border-left:2px solid whitesmoke;
+    border-right:2px solid whitesmoke;
+    min-height:101vh;
+    width: 85vw;
+    background-color:rgba(19, 18, 18, 0.85);
+    color:whitesmoke;
+    z-index: 1000;
+    padding:5%;
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom:70px;
+}
+
+#down-arrow{
+    border:2px solid whitesmoke;
+    background-color:rgb(233, 230, 230);
+    opacity: .5;
+    color:black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    position: absolute;
+    z-index: 10001;
+    bottom:12%;
+}
+
+#hidden{
+    display:none;
+}
+
+@media screen and (max-width: 900px) {
+    .bio-img{
+        min-width: 50%;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    .bio-img{
+        min-width: 100%;
+    }  
+    #bio-text{
+        padding-left:5%;
+        padding-right:5%;
+   
+    }
+}

@@ -1,0 +1,25 @@
+#footer-container{
+    /* border:2px solid yellow; */
+    display:flex;
+    flex-direction: row;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-reveal{
+    visibility: hidden;
+}
+
+#social-icons{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap; 
+}
+
+.icon:hover{
+    background-color:red;
+    border-radius:100%;
+}

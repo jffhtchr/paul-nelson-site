@@ -1,0 +1,36 @@
+#contact-container{
+    /* border:2px solid orange; */
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-content{
+    /* border:2px solid red; */
+    width:75%;
+    height:75%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.contact-item{
+    border:2px solid whitesmoke;
+    box-shadow: 2px 2px gray;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:15px;
+    padding:15px;
+    width:250px;
+    height:200px;
+    background-color:rgba(233, 230, 230, 0.95);
+}
